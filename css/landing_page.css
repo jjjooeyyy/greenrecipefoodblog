@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anek+Telugu:wght@200&family=Baskervville&family=Cormorant+Garamond:ital,wght@1,500&family=Dosis:wght@500&family=Inconsolata&family=Karla:wght@200&family=Quicksand:wght@500&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anek+Telugu:wght@200&family=Baskervville&family=Cormorant+Garamond:ital,wght@1,500&family=Dosis:wght@500&family=Inconsolata&family=Karla:wght@200&family=Quicksand:wght@500&family=Spectral:wght@300&family=Square+Peg&display=swap');
 
 *{
   margin:0;
   padding:0;
   }
-
 
 /************************************ Normal Nav **************************************/
 
@@ -105,7 +104,7 @@
     background: white !important;
   }
 
-  /*Animation of the icon */
+  /* Animation of the icon */
   label input:checked + .icon-container .hamburger {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -127,12 +126,12 @@
   }
 
  /* Display the menu when click */ 
-  label input:checked + .icon-container + ul { 
-    opacity: 1; 
-  }
+ label input:checked + .icon-container + ul { 
+  opacity: 1; 
+}
   
    label ul { 
-    z-index: 200;
+    z-index: 100;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -142,6 +141,7 @@
     transition: .25s 0s ease-in-out;
     list-style: none;
     line-height: 3.5rem;
+
   }
   
   label a {
@@ -153,11 +153,51 @@
     font-size: 4vmin;
     text-transform: uppercase;
     text-align: center;
+
   }
 
  label a:hover{
    color: rgb(218, 211, 203); 
  }
+
+ /************************************ Carousel **************************************/
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon, .carousel-indicators {
+    filter: invert(1); /* prev,next icon to black color */
+  }
+
+  .carousel-inner .carousel-caption .caption-1{
+    color: black;
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 30%;
+    margin-left: -5%;
+    margin-bottom: 29%;
+  
+  }
+
+  .carousel-inner .carousel-caption .caption-2 {
+    color: black;
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    width: 30%;
+    margin-left: 80%;
+    margin-bottom: 34%;
+
+  }
+
+  .carousel-inner .carousel-caption .caption-3 {
+    color: black;
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 30%;
+    margin-left: 76%;
+    margin-bottom: 34%;
+  }
 
 /************************************ About Us Section **************************************/
 .about-container{
@@ -176,18 +216,19 @@
 }
 
 .about-header{
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-weight: 800;
   font-size: 40px;
   text-align: center;
   font-family: 'Baskervville', serif;
+  text-transform: uppercase;
 }
 
 .about-text{
-  padding: 1rem;
+  padding: 3rem;
   text-align: center;
-  width: 90%;
-  font-size: 20px;
+  width: 85%;
+  font-size: 25px;
 }
 
 .about-button{
@@ -197,9 +238,10 @@
   border-color: rgb(168, 155, 155);
   background-color: transparent;
   border-radius: 30px;
-  width: 130px;
+  width: 140px;
   padding: 10px 20px;
   display: inline-block;
+  font-size: 20px;
   }
   
 .about-button:hover{
@@ -210,12 +252,19 @@
     width: 30%;
    height: auto;
     display: flex;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
 /************************************ Recipe Card Section **************************************/
+.recipe-section-title {
+  font-family: 'Baskervville', serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 .component{
   margin: 1rem;
@@ -461,7 +510,6 @@ font-size: 20px;
   }
 }
 
-
 /************************************ Responsive Setting **************************************/
 
 @media screen and (max-width: 768px) {
@@ -483,10 +531,34 @@ font-size: 20px;
   .icon-container{
   display: block;
   }
-  
+
+  .about-header{
+font-size: 30px;
+margin-top: 3rem;
+width: 85%;
+  }
+
+  .about-text{
+    width: 100%;
+    font-size: 23px;
+  }
+
+  .about-button{
+   font-size: 17px;
+   width: 125px;
+  }
+
   .about-pic{
     display: none !important;
   }
+
+.recipe-section-title{
+padding-top: 1rem;
+}
+
+.subscribe-header{
+  font-size: 30px;
+}
 
   .subscribe-text{
 width:320px;
