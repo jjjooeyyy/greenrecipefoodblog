@@ -9,10 +9,10 @@
 
       
     <!-- external css -->
-    <link rel="stylesheet" href="css/recipecards.css">
+    <link rel="stylesheet" href="css/recipe_page.css">
 
-      <!-- fontawesome icons -->
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- fontawesome icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
      <!-- animate on scroll *optional* -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -37,22 +37,16 @@
           </label>
          </div>
 
-<!--Recipe Cards -->
+<!--Recipe Cards Intro -->
 <section class="heading">
     <h1>Our Recipes</h1>
   <div class="button-container">
-    <button class="button" onClick="window.location.href='https://pinchofyum.com/recipes/vegan';"> 
-        <span class="icon">Vegan</span>
-   </button>
-   <button class="button" onClick="window.location.href='https://pinchofyum.com/recipes/salad';"> 
-    <span class="icon">Salad</span>
-</button>
-<button class="button" onClick="window.location.href='https://pinchofyum.com/recipes/pasta';"> 
-    <span class="icon">Pasta</span>
-</button>
+    <button type="button" class="button"><a href="/sweet_catagory.html">Sweet</a></button>
+    <button type="button" class="button "><a href="/savoury_catagory.html">Savoury</a></button>
+    <button type="button" class="button "><a href="/side_category.html">Side</a></button>
+</div>
 
-
-
+<!-- Search Bar -->
 <form class="example" action="/action_page.php">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -66,8 +60,7 @@
   <br>
   <br>
 
-
-
+<!-- Recipe Card -->
 <div class="wrapper">
     <div class="cols">
               <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -87,7 +80,7 @@
               </div>
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="url(https://pinchofyum.com/wp-content/uploads/Chocolate-Chip-Cookies.jpg)">
+                      <div class="front" style="background-image: url(https://pinchofyum.com/wp-content/uploads/Red-Chile-Chicken-Tacos-1.jpg)">
                           <div class="inner">
                               <p>Red Chile Chicken Tacos with Creamy Corn
                             </p>
@@ -179,7 +172,7 @@
               </div>
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                      <div class="front" style="background-image: url(https://www.insidetherustickitchen.com/wp-content/uploads/2021/08/Pappa-al-Pomodoro-1200px-Inside-the-Rustic-Kitchen-2.jpg)">
                           <div class="inner">
                               <p>Italian Tomato and Bread Soup (Pappa Al Pomodoro)</p>
                 <span>View Recipe</span>
@@ -209,7 +202,7 @@
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover');">
                 <div class="container">
-                    <div class="front" style="background-image: url(Spicy Peanut Soup with Sweet Potato + Kale)">
+                    <div class="front" style="background-image: url(https://pinchofyum.com/wp-content/uploads/sweet-potato-peanut-soup-recipe.jpg)">
                         <div class="inner">
                             <p>Spicy Peanut Soup with Sweet Potato + Kale</p>
               <span>View Recipe</span>

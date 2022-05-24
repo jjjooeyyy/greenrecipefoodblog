@@ -17,29 +17,16 @@
     margin: 2rem 0;
   }
   
-  form {
-width: 100%;
-align-items: center;
-display: flex;
-flex-direction: column;
-background-color: white;
+  form{
+    margin-top: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  form input{
-    margin-top: 1rem;
-    border-radius: 10px;
-    display: flex;
-  }
-
-  form button {
-    border-radius: 10px;
-   margin-top: 1rem;
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-self: center;
-  }
-
+input,button{
+border-radius: 10px;
+}
   .heading .icon {
     font-family: 'Karla', sans-serif;
   }
@@ -49,6 +36,7 @@ background-color: white;
     width: 90%;
     margin: 0 auto;
     max-width: 80rem;
+    margin-bottom: 5rem;
   }
   
   .cols{
@@ -97,7 +85,7 @@ background-color: white;
   }
   
   .back{
-    background: #cedce7;
+    background: #cbdfef;
     background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
     background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
     background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
@@ -388,10 +376,15 @@ margin-top: 2rem;
   width: 120px;
   padding: 10px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
+  font-family:'Karla', sans-serif; 
 }
 
+.button a{
+  text-decoration: none;
+  color: black;
+}
 .button:hover{
   opacity: 0.5;
 }
@@ -457,6 +450,7 @@ overflow: hidden;
   width: 100%;
   overflow: hidden;
 }
+
 
 
 .ml3 {
