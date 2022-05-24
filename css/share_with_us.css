@@ -203,6 +203,7 @@ flex-direction: column;
 
 #detail{
   width: 500px;
+  height: 300px;
 }
 
 #photo,.photo-upload{
